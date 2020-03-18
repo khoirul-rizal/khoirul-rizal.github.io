@@ -1,24 +1,22 @@
 const listVFX = [
   {
-    title: 'Dishonored 2',
-    subtitle: 'Cracing in slab',
-    img: 'https://i.pinimg.com/originals/11/8c/4f/118c4feda96aa420671bb35e4b33a179.jpg'
+    title: 'Clean.Inc',
+    subtitle: 'Be Game Janitor',
+    img: 'images/clean0.png',
+    link: 'https://globalgamejam.org/2020/games/cleaninc-video-game-janitor-6'
   },
   {
-    title: 'Detroit',
-    subtitle: 'Scan VFX',
-    img: 'https://i.pinimg.com/originals/11/8c/4f/118c4feda96aa420671bb35e4b33a179.jpg'
+    title: 'Monday',
+    subtitle: 'Be Security',
+    img: 'images/monday0.png',
+    link: 'https://drive.google.com/open?id=1XqV_FaJmvrJko6vpS4R_oSMwEP5vPmLt'
   },
   {
-    title: 'Async Loading',
-    subtitle: 'Loading Template',
-    img: 'https://i.pinimg.com/originals/11/8c/4f/118c4feda96aa420671bb35e4b33a179.jpg'
-  },
-  {
-    title: 'Fluid UI',
-    subtitle: 'UI flat and easy',
-    img: 'https://i.pinimg.com/originals/11/8c/4f/118c4feda96aa420671bb35e4b33a179.jpg'
-  },
+    title: 'Iluminator',
+    subtitle: 'Protect The Engine',
+    img: 'images/iluminator.png',
+    link: 'https://hapygames.itch.io/luminator'
+  }
 ]
 
 const LoadList = () => {
@@ -27,14 +25,14 @@ const LoadList = () => {
     const tempHTML = 
     `<article>
       <span class="image">
-        <img src="${data.img}" alt="" />
+        <img style="width:100%" src="${data.img}" alt="" />
       </span>
       <header class="major">
-        <h3><a href="landing.html" class="link">${data.title}</a></h3>
+        <h3><a target="_blank" href="${data.link}" class="link">${data.title}</a></h3>
         <p>${data.subtitle}<p>
       </header>
     </article>` 
     myHTML += tempHTML
   })
-  $("#one").html(myHTML)
+  // $("#one").html(myHTML)
 }; LoadList()
